@@ -1,0 +1,63 @@
+/* =========================== */
+/* ========== INTRO ========== */
+/* =========================== */
+#intro {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1d1d1b;
+    padding-top: 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) { 
+    .intro-title {
+        font-size: 3.5em;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro-subtitle {
+        display: block;
+        max-width: 700px;
+        font-size: 2em;
+        margin: 20px 0 40px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro-subtitle {
+        display: block;
+        font-size: 1.5em;
+        margin: 20px 0 40px 0;
+    }
+}
+
+.intro-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: solid 2px #fff;
+    border-radius: 0px;
+    transition: background .3s, color .3s;
+}
+
+.intro-btn:link,
+.intro-btn:visited,
+.intro-btn:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro-btn:hover {
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+}
