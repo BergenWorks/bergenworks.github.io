@@ -28,23 +28,39 @@ p {
       -ms-flex-align: center;
           align-items: center; }
 
+.section-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2em; }
+
 /* =========================== */
 /* =========== NAV =========== */
 /* =========================== */
-nav {
+.nav-compact {
   background: #333;
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height: 50px; }
-
-@media (min-width: 768px) {
-  nav {
-    text-align: right; } }
-
-@media (max-width: 768px) {
-  nav {
-    text-align: center; } }
+  height: 50px;
+  max-height: 50px; }
+  @media (min-width: 768px) {
+    .nav-compact {
+      text-align: right; } }
+  @media (max-width: 768px) {
+    .nav-compact {
+      text-align: center; } }
+  .nav-compact .container {
+    max-height: inherit; }
+  .nav-compact .nav-logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    overflow: hidden; }
+    .nav-compact .nav-logo img {
+      display: block;
+      height: auto;
+      max-width: 100%; }
 
 .nav-list {
   list-style: none;
@@ -152,12 +168,6 @@ nav {
   width: 100px;
   height: 1px;
   margin-top: 80px; }
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 2em; }
 
 /* =========================== */
 /* ========= MEMBERS ========= */
