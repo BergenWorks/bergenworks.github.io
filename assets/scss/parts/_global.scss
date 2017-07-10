@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: $font-family-main;
+    font-family: 'Open sans';
     color: $font-color-main;    
     @include font-size(1.6);
 
