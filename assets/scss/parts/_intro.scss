@@ -5,9 +5,31 @@
     width: 100%;
     min-height: 100vh;
     background-color: #1d1d1b;
-    padding-top: 50px;
     color: #fff;
     text-transform: uppercase;
+}
+
+.intro-container {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+
+    @media (max-width: 500px) {
+        padding-top: 0;
+    }
+}
+
+.intro-content {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @media (max-width: 500px) {
+        padding-top: 2em;
+    }
 }
 
 @media (min-width: 768px) { 
