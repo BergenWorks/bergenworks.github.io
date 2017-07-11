@@ -3,21 +3,13 @@ html {
 }
 
 body {
-    font-family: 'Open sans';
+    font-family: $font-family-main;
     color: $font-color-main;    
     @include font-size(1.6);
-
-    @media screen and (min-width: 900px) {
-         @include font-size(1.6);
-    }
-
-    @media screen and (min-width: 1200px) {
-        @include font-size(1.6);
-    }    
+    @include line-height(3.2);   
 }
 
 p {
-    @include line-height(3.4);
     margin-bottom: 2em;
 }
 
@@ -27,7 +19,7 @@ p {
 }
 
 .section-title {
-    font-size: 1.5em;
+    @include font-size(3);
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 2em;

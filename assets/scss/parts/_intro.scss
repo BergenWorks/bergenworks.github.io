@@ -1,12 +1,7 @@
-/* =========================== */
-/* ========== INTRO ========== */
-/* =========================== */
 #intro {
     width: 100%;
     min-height: 100vh;
     background-color: #1d1d1b;
-    color: #fff;
-    position: relative;
 }
 
 .intro-container {
@@ -32,9 +27,8 @@
 }
 
 .intro-title {
-    font-family: $font-family-titles;
     font-weight: 700;
-    margin: 0;
+    color: $font-color-white;
 
     @media (min-width: 768px) {
         @include font-size(6);
@@ -60,26 +54,21 @@
     border: solid 2px #fff;
     border-radius: 0px;
     transition: background .3s, color .3s;
+    color: $font-color-white;
 }
 
 .intro-btn:link,
 .intro-btn:visited,
 .intro-btn:focus {
-    color: #fff;
+    color: $font-color-white;
     text-decoration: none;
 }
 
 .intro-btn:hover {
     background: #fff;
-    color: #333;
+    color: $font-color-main;
     text-decoration: none;
 }
-
-
-
-
-
-
 
 .intro-circle {
     position: absolute;
