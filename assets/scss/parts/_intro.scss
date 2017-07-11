@@ -1,7 +1,7 @@
 #intro {
     width: 100%;
     min-height: 100vh;
-    background-color: #1d1d1b;
+    background-color: $dark-grey;
 }
 
 .intro-container {
@@ -51,7 +51,7 @@
 .intro-btn {
     display: inline-block;
     padding: 1em 6em;
-    border: solid 2px #fff;
+    border: solid 2px $white;
     border-radius: 0px;
     transition: background .3s, color .3s;
     color: $font-color-white;
@@ -65,7 +65,7 @@
 }
 
 .intro-btn:hover {
-    background: #fff;
+    background: $white;
     color: $font-color-main;
     text-decoration: none;
 }
