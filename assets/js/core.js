@@ -140,6 +140,6 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: marker,
         map: map,
-        icon: 'images/marker.png'
+        icon: 'assets/images/marker.png'
     });
 }
