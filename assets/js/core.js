@@ -128,7 +128,7 @@ function initMap() {
         }
     ];
 
-    var marker = { lat: 60.393747, lng: 5.327790 };
+    var marker = { lat: 60.394086, lng: 5.327595 };
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
