@@ -1,16 +1,11 @@
-/* =========================== */
-/* ========== ABOUT ========== */
-/* =========================== */
 #about {
     background: #F6F6F6;
-    padding: 80px 0;
+    padding: 7em 0;
 }
 
-#about p:last-of-type:after {
-    display: block;
-    content: "";
-    background: #333;
-    width: 100px;
-    height: 1px;
-    margin-top: 80px;
+.about-title {
+    @include font-size(4);
+    @include line-height(6);
+    font-weight: 700;
+    margin: 0 0 1.5em 0;
 }
