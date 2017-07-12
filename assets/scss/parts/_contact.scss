@@ -28,7 +28,8 @@
 }
 
 .email-link,
-.phone-link {
+.phone-link,
+.fb-link {
     position: relative;
     display: inline-block;
     padding-left: 2em;
@@ -58,6 +59,10 @@
 
 .phone-link:before {
     content: "\f095";
+}
+
+.fb-link:before {
+    content: "\f082";
 }
 
 .newsletter-title {

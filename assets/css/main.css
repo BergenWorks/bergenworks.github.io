@@ -336,18 +336,21 @@ p {
       margin-top: 3em; } }
 
 .email-link,
-.phone-link {
+.phone-link,
+.fb-link {
   position: relative;
   display: inline-block;
   padding-left: 2em;
   color: #333;
   margin-bottom: 0.5em; }
   .email-link:hover,
-  .phone-link:hover {
+  .phone-link:hover,
+  .fb-link:hover {
     text-decoration: none;
     color: #333; }
   .email-link:before,
-  .phone-link:before {
+  .phone-link:before,
+  .fb-link:before {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -362,6 +365,9 @@ p {
 
 .phone-link:before {
   content: "\f095"; }
+
+.fb-link:before {
+  content: "\f082"; }
 
 .newsletter-title {
   margin-bottom: 2em; }
