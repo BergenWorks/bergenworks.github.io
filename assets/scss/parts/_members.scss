@@ -32,6 +32,8 @@
     width: 100%;
     max-width: 150px;
     height: auto;
+    filter: brightness(0);
+    -webkit-filter: brightness(0);
 
     &-container {
         @media (min-width: 768px) {
@@ -43,13 +45,10 @@
 
 .member-panel {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-flow: column;
-    background: $white;
     width: 100%;
     height: 100%;
     height: 115px;
     padding: 1em;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 } 
