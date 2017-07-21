@@ -184,12 +184,18 @@ p {
       line-height: 80px;
       line-height: 8rem;
       margin: 1.5em 0; } }
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     .intro-title {
-      font-size: 35px;
-      font-size: 3.5rem;
-      line-height: 55px;
-      line-height: 5.5rem;
+      font-size: 30px;
+      font-size: 3rem;
+      line-height: 50px;
+      line-height: 5rem; } }
+  @media (min-width: 500px) and (max-width: 768px) {
+    .intro-title {
+      font-size: 45px;
+      font-size: 4.5rem;
+      line-height: 75px;
+      line-height: 7.5rem;
       margin: 1em 0; } }
   @media (max-width: 500px) {
     .intro-title {
