@@ -146,7 +146,8 @@ p {
 #intro {
   width: 100%;
   min-height: 100vh;
-  background-color: #1d1d1b; }
+  background-color: #1d1d1b;
+  position: relative; }
 
 .intro-container {
   display: -webkit-box;
@@ -193,6 +194,56 @@ p {
   @media (max-width: 500px) {
     .intro-title {
       margin: 0.5em 0; } }
+
+.intro-scroll-container {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .intro-scroll-container:hover {
+    text-decoration: none; }
+  .intro-scroll-container .intro-scroll-label {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #fff;
+    display: block;
+    padding-bottom: 20px;
+    position: relative; }
+    .intro-scroll-container .intro-scroll-label:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-left: solid 1px #fff;
+      border-bottom: solid 1px #fff;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      left: calc(50% - 8px);
+      -webkit-animation: intro-learn-more 3s infinite;
+              animation: intro-learn-more 3s infinite; }
+
+@-webkit-keyframes intro-learn-more {
+  0% {
+    bottom: 0px; }
+  50% {
+    bottom: 10px; }
+  100% {
+    bottom: 0px; } }
+
+@keyframes intro-learn-more {
+  0% {
+    bottom: 0px; }
+  50% {
+    bottom: 10px; }
+  100% {
+    bottom: 0px; } }
+  .intro-scroll-container .intro-scroll-icon {
+    display: inline-block;
+    width: 30px; }
+    @media (max-width: 500px) {
+      .intro-scroll-container .intro-scroll-icon {
+        width: 20px; } }
 
 .intro-btn {
   display: inline-block;

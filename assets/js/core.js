@@ -1,5 +1,5 @@
 // Animated scroll function for navigation
-$(".nav-link, .logo-link, .intro-btn").click(function(e){
+$(".nav-link, .logo-link, .intro-learn-more").click(function(e){
     e.preventDefault();
     var target = $(this).attr('href');
     
