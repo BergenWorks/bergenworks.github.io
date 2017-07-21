@@ -21,3 +21,10 @@ var waypoint = new Waypoint({
     },
     offset: '50%'
 });
+
+// Function that registers a lead when user clicks on the apply button
+// Returns true to allow the href event to fire
+function fbTrack() {
+    fbq('track', 'Lead');
+    return true;    
+}
