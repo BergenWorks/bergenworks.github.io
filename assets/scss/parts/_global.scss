@@ -56,3 +56,25 @@ p {
         height: auto;
     }
 }
+
+.btn-black {
+    padding: 1em 2em;
+    border: solid 2px $black;
+    transition: all .3s;
+    text-transform: uppercase;
+
+    &:link,
+    &:visited {
+        color: $black;
+    }
+
+    &:hover {
+        background: $black;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
