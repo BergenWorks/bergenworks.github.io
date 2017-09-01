@@ -490,9 +490,7 @@ p {
 .company-logo {
   width: 100%;
   max-width: 200px;
-  height: auto;
-  filter: brightness(0);
-  -webkit-filter: brightness(0); }
+  height: auto; }
   @media (min-width: 768px) {
     .company-logo-container {
       display: -webkit-box;

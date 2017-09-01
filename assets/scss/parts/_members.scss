@@ -32,8 +32,6 @@
     width: 100%;
     max-width: 200px;
     height: auto;
-    filter: brightness(0);
-    -webkit-filter: brightness(0);
 
     &-container {
         @media (min-width: 768px) {
