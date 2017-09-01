@@ -444,6 +444,10 @@ p {
     margin-top: 3em; }
   .page-content .content-image {
     margin: 3em 0; }
+    .page-content .content-image .image-caption {
+      font-style: italic;
+      margin-top: 0.5em;
+      text-align: right; }
 
 .membership-title {
   font-weight: 700;

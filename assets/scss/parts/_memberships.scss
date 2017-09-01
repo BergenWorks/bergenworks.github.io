@@ -51,6 +51,12 @@
     
     .content-image {
         margin: 3em 0;
+
+        .image-caption {
+            font-style: italic;
+            margin-top: 0.5em;
+            text-align: right;
+        }
     }
 }
 
