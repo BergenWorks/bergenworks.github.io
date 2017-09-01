@@ -14,6 +14,7 @@ gulp.task('watch', ['browserSync', 'minify-css'], function(){
     gulp.watch('assets/scss/**/*.scss', ['minify-css']);
     gulp.watch('assets/js/**/*.js', browserSync.reload);
     gulp.watch('*.html', browserSync.reload);
+    gulp.watch('**/*.html', browserSync.reload);
 });
 
 // Basic local server

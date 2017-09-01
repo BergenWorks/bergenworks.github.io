@@ -1,0 +1,66 @@
+.page-header {
+    background: $dark-grey;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+
+    &-inner-container {
+        display: flex;
+        flex-flow: column;
+        min-height: 45%;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 100;
+    
+        @media (max-width: 500px) {
+            padding-top: 0;
+        }            
+    }
+}
+
+.page-header-circle {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    z-index: 0;
+    height: 50%;
+    width: auto;
+}
+
+.page-header-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    max-width: 600px;
+}
+
+.page-content {
+    padding: 7em 0;
+
+    .content-heading {
+        @include font-size(2.4);
+        font-weight: 700;
+        margin-top: 3em;
+    }
+    
+    .content-image {
+        margin: 3em 0;
+    }
+}
+
+.membership {
+    &-title {
+        font-weight: 700;
+        @include font-size(2.8);
+    }
+    
+    &-price {
+        @include font-size(2.2);
+    }
+}

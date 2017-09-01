@@ -1,15 +1,31 @@
 // Animated scroll function for navigation
-$(".nav-link, .logo-link, .intro-learn-more").click(function(e){
+$(".onepage-link, .intro-learn-more").click(function(e){
     e.preventDefault();
-    var target = $(this).attr('href');
+    let target = $(this).attr('href');
+    const overlay = $(".overlay-nav");
+
+    if(overlay.is(':visible')) {
+        overlay.fadeOut(150);
+    }
     
     $("html, body").animate({
         scrollTop: $(target).offset().top
-    }, 800)
+    }, 800);    
+});
+
+$(".nav-toggle, .overlay-nav-toggle").click(function(){
+
+    const overlayNav = $(".overlay-nav");
+
+    if(overlayNav.is(':visible')) {
+        overlayNav.fadeOut(150);
+    } else {
+        overlayNav.fadeIn(150);
+    }
 });
 
 var waypoint = new Waypoint({
-    element: document.querySelector('#about'),
+    element: document.querySelector('.about-title'),
     handler: function(direction) {
         var nav = $(".nav-compact");
 
@@ -19,7 +35,7 @@ var waypoint = new Waypoint({
             nav.stop().fadeOut(300);         
         }
     },
-    offset: '50%'
+    offset: '30%'
 });
 
 // Function that registers a lead when user clicks on the apply button

@@ -45,13 +45,18 @@ p {
   .apply-btn-white:visited {
     text-decoration: none; }
 
+.imgWrap {
+  width: 100%; }
+  .imgWrap img {
+    max-width: 100%;
+    height: auto; }
+
 .nav-compact {
   background: #1d1d1b;
   position: fixed;
   z-index: 1000;
   width: 100%;
   height: 50px;
-  max-height: 50px;
   display: none; }
   .nav-compact-container {
     height: inherit;
@@ -82,6 +87,9 @@ p {
     list-style: none;
     padding: 0;
     margin: 0; }
+    @media (max-width: 768px) {
+      .nav-compact-list {
+        display: none; } }
 
 .nav-main {
   width: 100%;
@@ -119,20 +127,24 @@ p {
     list-style: none;
     margin: 0;
     padding: 0; }
+    @media (max-width: 768px) {
+      .nav-main-list {
+        display: none; } }
 
 .nav-item {
   display: inline-block;
   position: relative;
-  padding: 1em 0; }
+  padding: 1em 0;
+  margin-right: 2em; }
   @media (max-width: 400px) {
     .nav-item {
       font-size: 14px;
       font-size: 1.4rem; } }
 
-.nav-item:nth-of-type(2) {
-  margin: 0 2em; }
+.nav-item:last-of-type {
+  margin-right: 0; }
   @media (max-width: 400px) {
-    .nav-item:nth-of-type(2) {
+    .nav-item:last-of-type {
       margin: 0 1.5em; } }
 
 .nav-link:link,
@@ -160,6 +172,54 @@ p {
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   visibility: hidden; }
+
+.nav-toggle,
+.overlay-nav-toggle {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.nav-toggle {
+  display: none; }
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block; } }
+
+.overlay-nav {
+  position: fixed;
+  z-index: 99999;
+  right: 0;
+  background: rgba(0, 0, 0, 0.98);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .overlay-nav-toggle {
+    width: 100%;
+    padding: 1em 1em 0 0;
+    text-align: right; }
+    .overlay-nav-toggle .fa {
+      font-size: 20px;
+      font-size: 2rem; }
+  .overlay-nav-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin-bottom: auto; }
+    .overlay-nav-list-item {
+      position: relative;
+      margin-bottom: 0.5em; }
+      .overlay-nav-list-item a:link,
+      .overlay-nav-list-item a:visited {
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        padding: 0.5em; }
+      .overlay-nav-list-item a:hover {
+        text-decoration: none; }
 
 #intro {
   width: 100%;
@@ -318,8 +378,69 @@ p {
 .about-subheader {
   font-weight: 700; }
 
+.page-header {
+  background: #1d1d1b;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative; }
+  .page-header-inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    min-height: 45%;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    z-index: 100; }
+    @media (max-width: 500px) {
+      .page-header-inner-container {
+        padding-top: 0; } }
+
+.page-header-circle {
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  z-index: 0;
+  height: 50%;
+  width: auto; }
+
+.page-header-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  height: 100%;
+  max-width: 600px; }
+
+.page-content {
+  padding: 7em 0; }
+  .page-content .content-heading {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 3em; }
+  .page-content .content-image {
+    margin: 3em 0; }
+
+.membership-title {
+  font-weight: 700;
+  font-size: 28px;
+  font-size: 2.8rem; }
+
+.membership-price {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
 #members {
-  background: #e5e5e5;
+  background: #f6f6f6;
   padding: 7em 0; }
 
 .members-title {
