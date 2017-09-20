@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    background: $black;
     font-family: $font-family-main;
     color: $font-color-main;    
     @include font-size(1.6);
