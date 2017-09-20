@@ -28,6 +28,7 @@
 }
 
 .intro-title {
+    text-align: left;
     font-weight: 700;
     color: $font-color-white;
 
@@ -48,6 +49,20 @@
         @include line-height(7.5);
         margin: 1em 0;        
     }
+}
+
+.intro-subtitle {
+
+    &:first-of-type {
+        margin-top: 1.5em;
+    }
+
+    @include font-size(2.3);
+    @include line-height(3.8);
+    font-weight: normal;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .intro-scroll-container {
@@ -135,4 +150,14 @@
     z-index: 0;
     width: 50%;
     max-width: 600px;
+}
+
+.intro-link {
+    text-decoration: underline;
+    color: $white;
+
+    &:hover {
+        font-weight: bold;
+        color: $white;
+    }
 }

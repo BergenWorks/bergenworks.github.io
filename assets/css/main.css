@@ -269,6 +269,7 @@ p {
   text-align: center; }
 
 .intro-title {
+  text-align: left;
   font-weight: 700;
   color: #fff; }
   @media (min-width: 768px) {
@@ -292,6 +293,18 @@ p {
       line-height: 75px;
       line-height: 7.5rem;
       margin: 1em 0; } }
+
+.intro-subtitle {
+  font-size: 23px;
+  font-size: 2.3rem;
+  line-height: 38px;
+  line-height: 3.8rem;
+  font-weight: normal;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .intro-subtitle:first-of-type {
+    margin-top: 1.5em; }
 
 .intro-scroll-container {
   display: inline-block;
@@ -378,6 +391,13 @@ p {
   z-index: 0;
   width: 50%;
   max-width: 600px; }
+
+.intro-link {
+  text-decoration: underline;
+  color: #fff; }
+  .intro-link:hover {
+    font-weight: bold;
+    color: #fff; }
 
 #about {
   background: #f6f6f6;
