@@ -456,6 +456,9 @@ p {
   height: 100%;
   max-width: 600px; }
 
+#memberships-section {
+  background: #f6f6f6; }
+
 .page-content {
   padding: 7em 0; }
   .page-content .content-heading {
