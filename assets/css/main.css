@@ -482,6 +482,21 @@ p {
   font-size: 22px;
   font-size: 2.2rem; }
 
+.memberships-contact-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .memberships-contact-list-item {
+    margin-bottom: 0.5em; }
+    .memberships-contact-list-item a {
+      color: #000; }
+    .memberships-contact-list-item a:hover {
+      text-decoration: none; }
+    .memberships-contact-list-item .fa {
+      padding-right: 5px; }
+    .memberships-contact-list-item:last-of-type {
+      margin: 0; }
+
 #members {
   background: #f6f6f6;
   padding: 7em 0; }
